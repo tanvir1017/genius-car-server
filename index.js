@@ -52,6 +52,9 @@ run().catch(console.dir);
 app.get("/", (req, res) => {
   res.send("hello from genius car server");
 });
+app.get("/hello", (req, res) => {
+  res.send("hello from heroku car server");
+});
 app.listen(port, () => {
   console.log("listening from port", port);
 });
